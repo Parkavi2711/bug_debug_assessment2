@@ -1,0 +1,14 @@
+INFO 2026-04-08 10:12:01 Incoming request received
+INFO 2026-04-08 10:12:01 Validating request payload
+INFO 2026-04-08 10:12:01 Processing input data
+INFO 2026-04-08 10:12:01 Input size: 1547 characters
+
+ERROR 2026-04-08 10:12:01 ValueError: Input size exceeds allocated buffer capacity
+Traceback (most recent call last):
+  File "processor.py", line 41, in process_input
+    buffer[i] = input_data[i]
+IndexError: list assignment index out of range
+
+INFO 2026-04-08 10:12:01 Attempting retry
+WARNING 2026-04-08 10:12:01 Retry failed due to same error
+INFO 2026-04-08 10:12:01 Request handling aborted
